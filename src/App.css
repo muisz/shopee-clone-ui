@@ -1,38 +1,108 @@
-.App {
+body {
+  /* background-color: #ccc8c8; */
+  background-color: #ddd;
+}
+::-webkit-scrollbar{
+  background: transparent;
+}
+a{
+  color: unset;
+}
+a:hover{
+  color: unset;
+  text-decoration: none;
+}
+.link:hover{
+  color: #ee4d2d;
+  text-decoration: none;
+}
+.link-active{
+  color: #ee4d2d;
+}
+.primary{
+  color: #ee4d2d;
+}
+.main-layout {
+  width: 450px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #e6e4e4;
+  overflow: hidden;
+}
+.bottom-nav{
+  width: 450px;
+  height: 70px;
+  background-color: #fff;
+  border-top: 1px solid #e8e8e8;
+  position: absolute;
+  bottom: 0;
+}
+.bottom-nav-item{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.bottom-nav-item > div {
+  height: 70px;
+  padding: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bottom-nav-item-txt {
+  font-size: 12px;
+  margin-top: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid-top-page{
+  display: grid;
+  grid-template-columns: 80% 10% 10%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-top-page {
+  background-color: #ee4d2d;
+  height: 150px;
 }
-
-.App-link {
-  color: #61dafb;
+.balance-container{
+  width: 400px;
+  height: 55px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  top: -30px;
+  display: grid;
+  grid-template-columns: 15% 42% 43%;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-category{
+  /* height: 170px; */
+}
+.home-category ul {
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  white-space: nowrap;
+  height: 100%;
+}
+.home-category li {
+  display: inline-flex;
+  margin: 1px 15px;
+}
+.category-item{
+  width: 75px;
+  text-align: center;
+}
+.category-icon{
+  height: 75px;
+}
+.category-icon img{
+  width: 100%;
+  height: 100%;
+}
+.category-name{
+  font-size: 12px;
+  margin-top: 5px;
+  white-space: break-spaces;
+}
+.kategori-container{
+  height: 200px;
+  background-color: #fff;
+  padding: 15px;
 }
